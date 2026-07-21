@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Connect Company Pvt. Ltd. - Your Trusted Technology Partner in Nepal. Leading IT solutions, consulting, and technology services company.">
-    <meta name="keywords" content="IT solutions Nepal, ERP solutions, cloud services, cybersecurity, data centre, hardware software Nepal">
+    <meta name="description" content="Connect Company Pvt. Ltd. — Nepal's leading IT solutions provider. ERP, Cloud, Cybersecurity, Data Centre, Digital Transformation services for Banking, Healthcare, Education & Enterprise.">
+    <meta name="keywords" content="IT solutions Nepal, ERP implementation Nepal, cloud services Nepal, cybersecurity Nepal, data centre Nepal, Microsoft Dynamics 365 Nepal, SAP Business One Nepal, digital transformation Nepal">
     <meta name="author" content="Connect Company Pvt. Ltd.">
+    <meta property="og:title" content="Connect Company Pvt. Ltd. | Your Trusted Technology Partner in Nepal">
+    <meta property="og:description" content="Leading IT solutions, ERP, consulting, and technology services company in Nepal. Empowering businesses with innovative technology.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://connectcompany.com.np">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Connect Company Pvt. Ltd. | Your Trusted Technology Partner in Nepal</title>
+    <link rel="canonical" href="https://connectcompany.com.np">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,8 +23,27 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader">
-            <div class="loader-inner"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
             <span class="loader-text">Connect Company</span>
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-envelope"></i> info@connectcompany.com.np</span>
+                <span><i class="fas fa-phone"></i> +977-1-4911005</span>
+                <span><i class="fas fa-clock"></i> Sun-Fri: 9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </div>
 
@@ -26,9 +51,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">
-                <div class="logo-icon">
-                    <i class="fas fa-network-wired"></i>
-                </div>
+                <div class="logo-icon"><i class="fas fa-network-wired"></i></div>
                 <div class="logo-text">
                     <span class="logo-name">Connect Company</span>
                     <span class="logo-tagline">Pvt. Ltd.</span>
@@ -37,9 +60,22 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
+                <li class="has-dropdown">
+                    <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#services">Hardware Solutions</a></li>
+                        <li><a href="#services">Software Development</a></li>
+                        <li><a href="#services">ERP Solutions</a></li>
+                        <li><a href="#services">Cloud Services</a></li>
+                        <li><a href="#services">Cybersecurity</a></li>
+                        <li><a href="#services">Data Centre</a></li>
+                        <li><a href="#services">Networking</a></li>
+                        <li><a href="#services">IT Consulting</a></li>
+                    </ul>
+                </li>
                 <li><a href="#industries" class="nav-link">Industries</a></li>
-                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#insights" class="nav-link">Insights</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
@@ -55,126 +91,182 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="hero-particles" id="particles"></div>
-        <div class="hero-overlay"></div>
+        <div class="hero-bg">
+            <div class="hero-grid-bg"></div>
+            <div class="hero-glow"></div>
+        </div>
         <div class="hero-content">
             <div class="hero-badge">
-                <i class="fas fa-shield-halved"></i>
-                <span>Trusted Technology Partner in Nepal</span>
+                <span class="badge-dot"></span>
+                Nepal's Trusted Technology Partner Since 2010
             </div>
             <h1 class="hero-title">
-                <span class="hero-line">Connecting</span>
-                <span class="hero-line gradient-text">Technology</span>
-                <span class="hero-line">Empowering <span class="gradient-text">Business</span></span>
+                <span class="hero-line">Empowering Nepal's</span>
+                <span class="hero-line gradient-text">Digital Future</span>
+                <span class="hero-line hero-sub">with Enterprise IT Solutions</span>
             </h1>
             <p class="hero-description">
-                Leading IT solutions, consulting, and technology services company delivering innovative, reliable, and scalable business solutions across Nepal.
+                From ERP implementation to cloud migration, cybersecurity to digital transformation — we deliver end-to-end technology solutions that help businesses across Nepal operate smarter, scale faster, and stay secure.
             </p>
             <div class="hero-buttons">
                 <a href="#services" class="btn-primary">
-                    <span>Explore Services</span>
+                    <span>Explore Our Services</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
                 <a href="#contact" class="btn-secondary">
                     <i class="fas fa-phone"></i>
-                    <span>Contact Us</span>
+                    <span>Schedule a Consultation</span>
                 </a>
             </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="100">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Projects Delivered</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Happy Clients</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
-                    <span class="stat-label">Technical Support</span>
+            <div class="hero-clients">
+                <span class="clients-label">Trusted by 100+ organizations across Nepal</span>
+                <div class="client-logos">
+                    <div class="client-logo"><i class="fas fa-university"></i><span>Banks</span></div>
+                    <div class="client-logo"><i class="fas fa-hospital"></i><span>Healthcare</span></div>
+                    <div class="client-logo"><i class="fas fa-graduation-cap"></i><span>Education</span></div>
+                    <div class="client-logo"><i class="fas fa-industry"></i><span>Manufacturing</span></div>
+                    <div class="client-logo"><i class="fas fa-landmark"></i><span>Government</span></div>
+                    <div class="client-logo"><i class="fas fa-hotel"></i><span>Hospitality</span></div>
                 </div>
             </div>
         </div>
-        <div class="hero-scroll">
-            <a href="#about" class="scroll-indicator">
-                <span>Scroll Down</span>
-                <div class="scroll-arrow"></div>
-            </a>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                <div class="stat-content">
+                    <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-content">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                <div class="stat-content">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-headset"></i></div>
+                <div class="stat-content">
+                    <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+                    <span class="stat-label">Support Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section">
+        <div class="container">
+            <div class="trusted-inner">
+                <h3>Technology Partners & Certifications</h3>
+                <div class="partner-logos">
+                    <div class="partner-logo"><i class="fab fa-microsoft"></i><span>Microsoft Partner</span></div>
+                    <div class="partner-logo"><i class="fab fa-aws"></i><span>AWS Partner</span></div>
+                    <div class="partner-logo"><i class="fab fa-google"></i><span>Google Cloud</span></div>
+                    <div class="partner-logo"><i class="fas fa-shield-halved"></i><span>Cisco Partner</span></div>
+                    <div class="partner-logo"><i class="fas fa-database"></i><span>SAP Partner</span></div>
+                    <div class="partner-logo"><i class="fas fa-server"></i><span>VMware Partner</span></div>
+                    <div class="partner-logo"><i class="fas fa-cloud"></i><span>Oracle Partner</span></div>
+                    <div class="partner-logo"><i class="fas fa-shield-alt"></i><span>Fortinet Partner</span></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about-section section-padding">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">About Us</span>
-                <h2 class="section-title">Your Trusted <span class="gradient-text">Technology Partner</span></h2>
-                <div class="section-divider"></div>
-            </div>
             <div class="about-grid">
-                <div class="about-content">
-                    <h3>Connect Company Pvt. Ltd.</h3>
-                    <p class="about-lead">Connect Company Pvt. Ltd. is a leading IT solutions, consulting, and technology services company in Nepal, delivering innovative, reliable, and scalable business solutions.</p>
-                    <p>We specialize in Hardware, Software, ERP Solutions, Data Centre Infrastructure, Cloud Services, Corporate Training, IT Consulting, Networking, Cybersecurity, and Digital Transformation.</p>
-                    <p>With experienced professionals and industry-leading technologies, we help businesses improve efficiency, security, and productivity through comprehensive IT solutions.</p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <span>Complete End-to-End IT Solutions</span>
+                <div class="about-visual">
+                    <div class="about-card-stack">
+                        <div class="about-main-card">
+                            <div class="about-card-icon"><i class="fas fa-building"></i></div>
+                            <h3>Connect Company Pvt. Ltd.</h3>
+                            <p>Established in Kathmandu, Nepal — a premier IT solutions and consulting company serving enterprises, government, and SMEs across the nation.</p>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check-circle"></i>
+                        <div class="about-mini-cards">
+                            <div class="mini-card">
+                                <i class="fas fa-award"></i>
+                                <div><strong>ISO Certified</strong><span>Quality Management</span></div>
                             </div>
-                            <span>Experienced & Certified Professionals</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check-circle"></i>
+                            <div class="mini-card">
+                                <i class="fas fa-handshake"></i>
+                                <div><strong>Microsoft Partner</strong><span>Licensed Solutions</span></div>
                             </div>
-                            <span>Enterprise-Class Technologies</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check-circle"></i>
+                            <div class="mini-card">
+                                <i class="fas fa-users-cog"></i>
+                                <div><strong>50+ Engineers</strong><span>Certified Professionals</span></div>
                             </div>
-                            <span>Customized Business Solutions</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <span>24/7 Technical Assistance</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <span>Trusted Technology Partner</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-mission-vision">
-                    <div class="mission-card">
-                        <div class="card-icon">
-                            <i class="fas fa-bullseye"></i>
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">Nepal's Leading <span class="gradient-text">IT Solutions</span> Provider</h2>
+                    <p class="about-lead">Connect Company Pvt. Ltd. is a leading IT solutions, consulting, and technology services company in Nepal, delivering innovative, reliable, and scalable business solutions since our establishment.</p>
+                    <p>We specialize in the complete spectrum of enterprise technology — from Hardware and Software Solutions to ERP Implementation, Data Centre Infrastructure, Cloud Services, Corporate Training, IT Consulting, Networking, Cybersecurity, and Digital Transformation.</p>
+                    <p>With a team of experienced and certified professionals, we partner with global technology leaders including Microsoft, SAP, AWS, Cisco, VMware, and Fortinet to deliver world-class solutions tailored to the Nepalese market.</p>
+
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <span class="highlight-number">15+</span>
+                            <span class="highlight-text">Years of<br>Experience</span>
                         </div>
-                        <h4>Our Mission</h4>
-                        <p>To empower businesses with innovative, reliable, and cost-effective technology solutions that drive growth, efficiency, and digital transformation.</p>
-                    </div>
-                    <div class="vision-card">
-                        <div class="card-icon">
-                            <i class="fas fa-eye"></i>
+                        <div class="highlight">
+                            <span class="highlight-number">50+</span>
+                            <span class="highlight-text">Certified<br>Engineers</span>
                         </div>
-                        <h4>Our Vision</h4>
-                        <p>To become Nepal's most trusted and innovative IT solutions, ERP, consulting, and technology services company, delivering world-class solutions that enable organizations to succeed in the digital era.</p>
+                        <div class="highlight">
+                            <span class="highlight-number">100+</span>
+                            <span class="highlight-text">Enterprise<br>Clients</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">10+</span>
+                            <span class="highlight-text">Global Tech<br>Partners</span>
+                        </div>
                     </div>
+
+                    <div class="about-cta">
+                        <a href="#contact" class="btn-primary">Talk to Our Team <i class="fas fa-arrow-right"></i></a>
+                        <a href="#process" class="btn-outline">Our Approach <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Vision Values -->
+    <section class="mvv-section section-padding">
+        <div class="container">
+            <div class="mvv-grid">
+                <div class="mvv-card mission-card">
+                    <div class="mvv-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses with innovative, reliable, and cost-effective technology solutions that drive growth, efficiency, and digital transformation across Nepal and the South Asian region.</p>
+                </div>
+                <div class="mvv-card vision-card">
+                    <div class="mvv-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>To become Nepal's most trusted and innovative IT solutions, ERP, consulting, and technology services company, delivering world-class solutions that enable organizations to succeed in the digital era.</p>
+                </div>
+                <div class="mvv-card values-card">
+                    <div class="mvv-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Our Values</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Innovation & Excellence</li>
+                        <li><i class="fas fa-check"></i> Integrity & Transparency</li>
+                        <li><i class="fas fa-check"></i> Customer-Centricity</li>
+                        <li><i class="fas fa-check"></i> Continuous Learning</li>
+                        <li><i class="fas fa-check"></i> Social Responsibility</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -187,223 +279,279 @@
                 <span class="section-tag">Our Services</span>
                 <h2 class="section-title">Comprehensive <span class="gradient-text">IT Solutions</span></h2>
                 <div class="section-divider"></div>
-                <p class="section-subtitle">We offer end-to-end technology solutions tailored to your business needs</p>
+                <p class="section-subtitle">End-to-end technology services designed to transform your business operations and accelerate growth</p>
             </div>
-            <div class="services-grid">
-                <!-- Hardware Solutions -->
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-desktop"></i>
+
+            <div class="services-filter">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="infra">Infrastructure</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="consulting">Consulting</button>
+            </div>
+
+            <div class="services-grid" id="services-grid">
+                <!-- ERP Solutions -->
+                <div class="service-card featured" data-category="software">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>ERP Solutions</h3>
+                    <p>Complete ERP implementation, customization, migration, and support for businesses of all sizes. We are certified partners for leading ERP platforms.</p>
+                    <div class="service-platforms">
+                        <span class="platform-badge">Microsoft Dynamics 365</span>
+                        <span class="platform-badge">SAP Business One</span>
+                        <span class="platform-badge">ERPNext</span>
+                        <span class="platform-badge">Odoo</span>
                     </div>
-                    <h3>Hardware Solutions</h3>
                     <ul class="service-list">
-                        <li>Enterprise Servers</li>
+                        <li>ERP Implementation & Deployment</li>
+                        <li>ERP Migration & Upgrades</li>
+                        <li>Custom Module Development</li>
+                        <li>Business Process Automation</li>
+                        <li>User Training & Support</li>
+                        <li>Annual Maintenance Contracts</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="service-card" data-category="infra">
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Migrate, manage, and optimize your infrastructure with enterprise-grade cloud platforms. Reduce costs, improve scalability, and enable remote work.</p>
+                    <div class="service-platforms">
+                        <span class="platform-badge">Microsoft Azure</span>
+                        <span class="platform-badge">AWS</span>
+                        <span class="platform-badge">Google Cloud</span>
+                    </div>
+                    <ul class="service-list">
+                        <li>Cloud Migration & Assessment</li>
+                        <li>Hybrid & Multi-Cloud Architecture</li>
+                        <li>Microsoft 365 & Google Workspace</li>
+                        <li>Backup as a Service (BaaS)</li>
+                        <li>Disaster Recovery as a Service</li>
+                        <li>Cloud Security & Compliance</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="service-card" data-category="security">
+                    <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Cybersecurity Services</h3>
+                    <p>Protect your digital assets with comprehensive security solutions. From risk assessment to 24/7 monitoring, we keep your business safe from evolving threats.</p>
+                    <div class="service-platforms">
+                        <span class="platform-badge">Fortinet</span>
+                        <span class="platform-badge">Palo Alto</span>
+                        <span class="platform-badge">CrowdStrike</span>
+                    </div>
+                    <ul class="service-list">
+                        <li>Security Assessment & Auditing</li>
+                        <li>Firewall & Endpoint Protection</li>
+                        <li>Vulnerability Assessment & Pen Testing</li>
+                        <li>SOC as a Service (24/7 Monitoring)</li>
+                        <li>Data Loss Prevention (DLP)</li>
+                        <li>Compliance & Risk Management</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Data Centre -->
+                <div class="service-card" data-category="infra">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <h3>Data Centre Solutions</h3>
+                    <p>Design, build, and manage resilient data centre infrastructure. From rack installation to full facility management, we ensure 99.99% uptime.</p>
+                    <ul class="service-list">
+                        <li>Data Centre Design & Consulting</li>
+                        <li>Server & Storage Installation</li>
+                        <li>Server Virtualization (VMware, Hyper-V)</li>
+                        <li>UPS & Power Management</li>
+                        <li>Cooling & Environmental Monitoring</li>
+                        <li>Backup & Disaster Recovery</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Software Development -->
+                <div class="service-card" data-category="software">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Software Development</h3>
+                    <p>Custom-built software solutions designed around your unique business processes. From web apps to mobile apps to enterprise systems.</p>
+                    <ul class="service-list">
+                        <li>Custom Software Development</li>
+                        <li>Web Application Development</li>
+                        <li>Mobile App Development (iOS & Android)</li>
+                        <li>CRM & HRMS Solutions</li>
+                        <li>Inventory & Accounting Systems</li>
+                        <li>API Integration & Microservices</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Networking -->
+                <div class="service-card" data-category="infra">
+                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Networking Solutions</h3>
+                    <p>Enterprise-grade networking infrastructure designed for performance, security, and scalability. From small offices to multi-site enterprises.</p>
+                    <ul class="service-list">
+                        <li>LAN/WAN Design & Implementation</li>
+                        <li>Structured Cabling (Cat6/6A/Fiber)</li>
+                        <li>VPN, MPLS & SD-WAN Solutions</li>
+                        <li>Enterprise Wi-Fi (Cisco, Ubiquiti)</li>
+                        <li>Network Monitoring & Optimization</li>
+                        <li>Firewall & Network Security</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Hardware Solutions -->
+                <div class="service-card" data-category="infra">
+                    <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Hardware Solutions</h3>
+                    <p>Enterprise hardware procurement, installation, and maintenance. We partner with Dell, HP, Lenovo, and other leading manufacturers.</p>
+                    <ul class="service-list">
+                        <li>Enterprise Servers (Dell, HP, Lenovo)</li>
                         <li>Desktop & Laptop Supply</li>
-                        <li>Storage Systems</li>
-                        <li>Network Equipment</li>
-                        <li>Data Centre Hardware</li>
+                        <li>Storage Systems (SAN/NAS)</li>
+                        <li>Network Equipment & Switches</li>
                         <li>UPS & Power Solutions</li>
                         <li>IT Infrastructure Setup</li>
                     </ul>
                     <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <!-- Software Solutions -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Software Solutions</h3>
-                    <ul class="service-list">
-                        <li>Custom Software Development</li>
-                        <li>Web Application Development</li>
-                        <li>Mobile Application Development</li>
-                        <li>Business Automation</li>
-                        <li>CRM Solutions</li>
-                        <li>HR & Payroll Systems</li>
-                        <li>Cloud-Based Applications</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- ERP Solutions -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>ERP Solutions</h3>
-                    <ul class="service-list">
-                        <li>Microsoft Dynamics 365 Business Central</li>
-                        <li>SAP Business One (SAP B1)</li>
-                        <li>ERPNext</li>
-                        <li>Odoo ERP</li>
-                        <li>ERP Implementation</li>
-                        <li>ERP Migration & Support</li>
-                        <li>Business Process Automation</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Data Centre Solutions -->
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Data Centre Solutions</h3>
-                    <ul class="service-list">
-                        <li>Data Centre Design</li>
-                        <li>Server Installation</li>
-                        <li>Server Virtualization</li>
-                        <li>Storage Solutions</li>
-                        <li>Backup & Disaster Recovery</li>
-                        <li>Rack & Power Management</li>
-                        <li>Cooling Infrastructure</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Cloud Solutions -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud Solutions</h3>
-                    <ul class="service-list">
-                        <li>Microsoft Azure</li>
-                        <li>Microsoft 365</li>
-                        <li>Google Workspace</li>
-                        <li>AWS Cloud Services</li>
-                        <li>Cloud Migration</li>
-                        <li>Hybrid Cloud</li>
-                        <li>Disaster Recovery</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Networking Solutions -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Networking Solutions</h3>
-                    <ul class="service-list">
-                        <li>LAN/WAN Design</li>
-                        <li>Structured Cabling</li>
-                        <li>VPN Solutions</li>
-                        <li>MPLS Network</li>
-                        <li>Enterprise Wi-Fi</li>
-                        <li>Firewall Configuration</li>
-                        <li>Network Optimization</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Cybersecurity Services -->
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-halved"></i>
-                    </div>
-                    <h3>Cybersecurity Services</h3>
-                    <ul class="service-list">
-                        <li>Firewall Management</li>
-                        <li>Endpoint Security</li>
-                        <li>Security Audits</li>
-                        <li>Vulnerability Assessment</li>
-                        <li>Risk Management</li>
-                        <li>Data Protection</li>
-                        <li>Security Monitoring</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Server & Infrastructure -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-hdd"></i>
-                    </div>
-                    <h3>Server & Infrastructure</h3>
-                    <ul class="service-list">
-                        <li>Windows/Linux Server Admin</li>
-                        <li>Active Directory</li>
-                        <li>DNS & DHCP</li>
-                        <li>VMware & Hyper-V</li>
-                        <li>Storage Management</li>
-                        <li>Backup Solutions</li>
-                        <li>Virtualization</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-
                 <!-- Security & Surveillance -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
+                <div class="service-card" data-category="security">
+                    <div class="service-icon"><i class="fas fa-video"></i></div>
                     <h3>Security & Surveillance</h3>
+                    <p>Advanced physical security systems including IP-based CCTV, access control, and biometric solutions for enterprises and institutions.</p>
                     <ul class="service-list">
-                        <li>CCTV Installation</li>
-                        <li>IP Camera Solutions</li>
-                        <li>Video Surveillance</li>
-                        <li>Access Control Systems</li>
-                        <li>Biometric Attendance</li>
-                        <li>Alarm Systems</li>
-                        <li>Remote Monitoring</li>
+                        <li>CCTV & IP Camera Installation</li>
+                        <li>Video Management Systems (VMS)</li>
+                        <li>Access Control & Biometric Systems</li>
+                        <li>Alarm & Intrusion Detection</li>
+                        <li>Remote Monitoring Solutions</li>
+                        <li>Integrated Security Platforms</li>
                     </ul>
                     <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <!-- Communication Solutions -->
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
-                        <i class="fas fa-phone-volume"></i>
-                    </div>
+                <!-- Communication -->
+                <div class="service-card" data-category="infra">
+                    <div class="service-icon"><i class="fas fa-phone-volume"></i></div>
                     <h3>Communication Solutions</h3>
+                    <p>Unified communication platforms that connect your teams and customers. VoIP, PBX, video conferencing, and call center solutions.</p>
                     <ul class="service-list">
-                        <li>IP Telephone (VoIP)</li>
-                        <li>PBX Systems</li>
-                        <li>Intercom Solutions</li>
-                        <li>Video Conferencing</li>
-                        <li>Office Communication</li>
+                        <li>IP Telephone (VoIP) Systems</li>
+                        <li>PBX & IP-PBX Solutions</li>
+                        <li>Video Conferencing (Zoom, Teams)</li>
                         <li>Call Center Solutions</li>
-                        <li>Unified Communications</li>
+                        <li>Intercom & PA Systems</li>
+                        <li>Unified Communications (UC)</li>
                     </ul>
                     <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Corporate Training -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
+                <div class="service-card" data-category="consulting">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
                     <h3>Corporate Training</h3>
+                    <p>Professional IT training programs for organizations and individuals. Upskill your team with certified training from industry experts.</p>
                     <ul class="service-list">
-                        <li>Microsoft Technologies</li>
+                        <li>Microsoft Technologies (Azure, M365)</li>
                         <li>Networking (CCNA, CCNP)</li>
-                        <li>Cybersecurity Training</li>
-                        <li>Cloud Computing</li>
-                        <li>ERP Training</li>
-                        <li>Server Administration</li>
-                        <li>Digital Transformation</li>
+                        <li>Cybersecurity & Ethical Hacking</li>
+                        <li>Cloud Computing & DevOps</li>
+                        <li>ERP Training (D365, SAP B1)</li>
+                        <li>Project Management (PMP, PRINCE2)</li>
                     </ul>
                     <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <!-- IT Consulting -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
+                <div class="service-card" data-category="consulting">
+                    <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
                     <h3>IT Consulting</h3>
+                    <p>Strategic technology advisory to align IT investments with business goals. From digital transformation roadmaps to infrastructure planning.</p>
                     <ul class="service-list">
-                        <li>Digital Transformation</li>
-                        <li>IT Strategy</li>
-                        <li>Infrastructure Consulting</li>
-                        <li>ERP Consulting</li>
-                        <li>Cloud Consulting</li>
-                        <li>Security Consulting</li>
-                        <li>Technology Roadmap</li>
+                        <li>Digital Transformation Strategy</li>
+                        <li>IT Strategy & Roadmap</li>
+                        <li>Infrastructure Assessment</li>
+                        <li>ERP & Cloud Consulting</li>
+                        <li>Security Consulting & Compliance</li>
+                        <li>IT Project Management</li>
                     </ul>
                     <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Server & Infrastructure -->
+                <div class="service-card" data-category="infra">
+                    <div class="service-icon"><i class="fas fa-hdd"></i></div>
+                    <h3>Server & Infrastructure</h3>
+                    <p>Complete server administration, virtualization, and infrastructure management for on-premise and hybrid environments.</p>
+                    <ul class="service-list">
+                        <li>Windows & Linux Server Administration</li>
+                        <li>Active Directory & Group Policy</li>
+                        <li>DNS, DHCP & IP Management</li>
+                        <li>VMware & Hyper-V Virtualization</li>
+                        <li>Storage Area Networks (SAN)</li>
+                        <li>Backup & High Availability</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work / Process -->
+    <section id="process" class="process-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Process</span>
+                <h2 class="section-title">How We <span class="gradient-text">Deliver Results</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">A proven methodology that ensures successful project delivery every time</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-search"></i></div>
+                        <h3>Discovery & Assessment</h3>
+                        <p>We analyze your current IT infrastructure, business processes, pain points, and goals. Our team conducts thorough stakeholder interviews and technical audits to understand your unique requirements.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h3>Strategy & Design</h3>
+                        <p>Based on our findings, we design a tailored solution architecture with clear timelines, milestones, and KPIs. We present multiple options with ROI projections so you can make informed decisions.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Implementation & Integration</h3>
+                        <p>Our certified engineers deploy your solution using industry best practices. We ensure seamless integration with existing systems, minimal downtime, and rigorous quality assurance at every stage.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Training & Handover</h3>
+                        <p>We provide comprehensive training for your team including documentation, video tutorials, and hands-on workshops. Our goal is to ensure your team is confident and self-sufficient.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-headset"></i></div>
+                        <h3>Support & Optimization</h3>
+                        <p>Our relationship doesn't end at deployment. We provide 24/7 technical support, regular health checks, performance optimization, and proactive maintenance to ensure long-term success.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -419,44 +567,44 @@
             </div>
             <div class="why-grid">
                 <div class="why-card">
-                    <div class="why-number">01</div>
-                    <h4>End-to-End Solutions</h4>
-                    <p>Complete IT solutions from consulting to implementation and support.</p>
+                    <div class="why-icon"><i class="fas fa-layer-group"></i></div>
+                    <h4>End-to-End IT Solutions</h4>
+                    <p>From consultation and design to implementation and support — a single trusted partner for all your technology needs.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-number">02</div>
+                    <div class="why-icon"><i class="fas fa-user-tie"></i></div>
                     <h4>Certified Professionals</h4>
-                    <p>Experienced and certified team of IT experts and consultants.</p>
+                    <p>50+ certified engineers with expertise in Microsoft, Cisco, AWS, SAP, VMware, and other leading platforms.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-number">03</div>
-                    <h4>Enterprise Technology</h4>
-                    <p>Industry-leading technologies and enterprise-class solutions.</p>
+                    <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Global Technology Partners</h4>
+                    <p>Authorized partnerships with Microsoft, SAP, AWS, Google Cloud, Cisco, VMware, Fortinet, and Oracle.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-number">04</div>
-                    <h4>Custom Solutions</h4>
-                    <p>Tailored solutions designed to meet your specific business needs.</p>
+                    <div class="why-icon"><i class="fas fa-sliders-h"></i></div>
+                    <h4>Customized Solutions</h4>
+                    <p>Every solution is tailored to your specific business requirements, industry standards, and budget constraints.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-number">05</div>
-                    <h4>Reliable Support</h4>
-                    <p>24/7 technical assistance and dedicated support team.</p>
+                    <div class="why-icon"><i class="fas fa-clock"></i></div>
+                    <h4>24/7 Technical Support</h4>
+                    <p>Round-the-clock support with guaranteed SLAs, remote assistance, and on-site intervention when needed.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-number">06</div>
-                    <h4>Fast Delivery</h4>
-                    <p>Quick project delivery with agile methodology and best practices.</p>
+                    <div class="why-icon"><i class="fas fa-rocket"></i></div>
+                    <h4>Fast Project Delivery</h4>
+                    <p>Agile project management methodology ensuring on-time delivery with transparent communication throughout.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-number">07</div>
-                    <h4>Affordable Services</h4>
-                    <p>Cost-effective and scalable solutions for businesses of all sizes.</p>
+                    <div class="why-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <h4>Cost-Effective Services</h4>
+                    <p>Enterprise-class solutions at competitive prices. Flexible engagement models including AMC and pay-per-use.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-number">08</div>
+                    <div class="why-icon"><i class="fas fa-heart"></i></div>
                     <h4>Customer Commitment</h4>
-                    <p>Strong customer commitment and long-term partnerships.</p>
+                    <p>Long-term partnerships built on trust, transparency, and a genuine commitment to your business success.</p>
                 </div>
             </div>
         </div>
@@ -467,124 +615,266 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Industries We Serve</span>
-                <h2 class="section-title">Serving <span class="gradient-text">Diverse Industries</span></h2>
+                <h2 class="section-title">Tailored Solutions for <span class="gradient-text">Every Sector</span></h2>
                 <div class="section-divider"></div>
-                <p class="section-subtitle">Providing tailored IT solutions across various sectors</p>
+                <p class="section-subtitle">Deep industry expertise enables us to deliver solutions that address sector-specific challenges and compliance requirements</p>
             </div>
             <div class="industries-grid">
                 <div class="industry-card">
-                    <i class="fas fa-university"></i>
+                    <div class="industry-icon"><i class="fas fa-university"></i></div>
                     <h4>Banking & Finance</h4>
+                    <p>Core banking solutions, digital payment systems, regulatory compliance, and secure IT infrastructure for financial institutions.</p>
                 </div>
                 <div class="industry-card">
-                    <i class="fas fa-industry"></i>
-                    <h4>Manufacturing</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-truck-fast"></i>
-                    <h4>Trading Companies</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-landmark"></i>
-                    <h4>Government</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-school"></i>
-                    <h4>Educational Institutions</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-heartbeat"></i>
+                    <div class="industry-icon"><i class="fas fa-heartbeat"></i></div>
                     <h4>Healthcare</h4>
+                    <p>Hospital management systems, EMR/EHR solutions, telemedicine platforms, and HIPAA-compliant infrastructure.</p>
                 </div>
                 <div class="industry-card">
-                    <i class="fas fa-hands-helping"></i>
-                    <h4>NGOs & INGOs</h4>
+                    <div class="industry-icon"><i class="fas fa-industry"></i></div>
+                    <h4>Manufacturing</h4>
+                    <p>ERP implementation, production management, supply chain optimization, and IoT-enabled smart manufacturing.</p>
                 </div>
                 <div class="industry-card">
-                    <i class="fas fa-hotel"></i>
+                    <div class="industry-icon"><i class="fas fa-school"></i></div>
+                    <h4>Education</h4>
+                    <p>Learning management systems, campus networking, digital classrooms, and student information systems.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-landmark"></i></div>
+                    <h4>Government</h4>
+                    <p>E-governance solutions, secure communication, citizen service portals, and digital record management.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h4>Trading & Logistics</h4>
+                    <p>Inventory management, fleet tracking, warehouse automation, and supply chain visibility solutions.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-hotel"></i></div>
                     <h4>Hospitality</h4>
+                    <p>Property management systems, POS solutions, guest experience platforms, and unified network infrastructure.</p>
                 </div>
                 <div class="industry-card">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h4>Retail</h4>
+                    <div class="industry-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h4>Retail & E-Commerce</h4>
+                    <p>POS systems, e-commerce platforms, inventory management, customer analytics, and omnichannel solutions.</p>
                 </div>
                 <div class="industry-card">
-                    <i class="fas fa-hard-hat"></i>
+                    <div class="industry-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h4>NGOs & INGOs</h4>
+                    <p>Donor management, project tracking, field connectivity, and secure data management for social organizations.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fas fa-hard-hat"></i></div>
                     <h4>Construction</h4>
+                    <p>Project management, site surveillance, BIM integration, and fleet/resource management solutions.</p>
                 </div>
                 <div class="industry-card">
-                    <i class="fas fa-shipping-fast"></i>
-                    <h4>Logistics</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-satellite-dish"></i>
+                    <div class="industry-icon"><i class="fas fa-satellite-dish"></i></div>
                     <h4>Telecommunications</h4>
+                    <p>Network infrastructure, billing systems, subscriber management, and NOC operations support.</p>
                 </div>
                 <div class="industry-card">
-                    <i class="fas fa-building"></i>
+                    <div class="industry-icon"><i class="fas fa-building"></i></div>
                     <h4>Corporate Enterprises</h4>
+                    <p>Enterprise IT infrastructure, ERP/CRM deployment, unified communications, and managed IT services.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise-section section-padding">
+    <!-- Nepal IT Landscape -->
+    <section class="landscape-section section-padding">
+        <div class="container">
+            <div class="landscape-grid">
+                <div class="landscape-content">
+                    <span class="section-tag">Nepal IT Landscape</span>
+                    <h2 class="section-title">Driving Nepal's <span class="gradient-text">Digital Transformation</span></h2>
+                    <p>Nepal's IT services market is experiencing significant growth, driven by increasing internet penetration, smartphone adoption, and government initiatives to promote digitalization. The country's digital transformation market is projected to grow substantially through 2030.</p>
+                    <p>As one of Nepal's established IT solutions providers, Connect Company Pvt. Ltd. plays a pivotal role in this transformation — helping businesses in banking, healthcare, education, government, and enterprise sectors embrace digital technologies to improve efficiency, security, and customer experience.</p>
+                    <div class="landscape-stats">
+                        <div class="ls-item">
+                            <span class="ls-number">72%</span>
+                            <span class="ls-label">Internet Penetration in Nepal</span>
+                        </div>
+                        <div class="ls-item">
+                            <span class="ls-number">45M+</span>
+                            <span class="ls-label">Mobile Subscribers</span>
+                        </div>
+                        <div class="ls-item">
+                            <span class="ls-number">25%</span>
+                            <span class="ls-label">Annual IT Market Growth</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary">Start Your Digital Journey <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="landscape-visual">
+                    <div class="trend-cards">
+                        <div class="trend-card">
+                            <i class="fas fa-cloud-arrow-up"></i>
+                            <h4>Cloud Adoption</h4>
+                            <p>Nepalese enterprises are rapidly migrating to cloud platforms for scalability, cost reduction, and remote work enablement.</p>
+                        </div>
+                        <div class="trend-card">
+                            <i class="fas fa-mobile-screen-button"></i>
+                            <h4>Mobile-First Strategy</h4>
+                            <p>With high mobile penetration, businesses are prioritizing mobile apps and responsive platforms to reach customers.</p>
+                        </div>
+                        <div class="trend-card">
+                            <i class="fas fa-brain"></i>
+                            <h4>AI & Automation</h4>
+                            <p>Organizations are leveraging AI, machine learning, and RPA to automate processes and gain data-driven insights.</p>
+                        </div>
+                        <div class="trend-card">
+                            <i class="fas fa-lock"></i>
+                            <h4>Cybersecurity Focus</h4>
+                            <p>Rising cyber threats are driving demand for comprehensive security solutions, compliance, and security awareness training.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section id="insights" class="insights-section section-padding">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Our Expertise</span>
-                <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+                <span class="section-tag">Insights & Resources</span>
+                <h2 class="section-title">Latest from <span class="gradient-text">Our Experts</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Stay informed with the latest IT trends, insights, and best practices for your business</p>
+            </div>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect fill='%230066ff' width='400' height='200'/%3E%3Ctext fill='%23fff' font-family='Inter' font-size='18' x='200' y='100' text-anchor='middle' dominant-baseline='middle'%3ECloud Migration%3C/text%3E%3C/svg%3E" alt="Cloud Migration Guide">
+                        <span class="insight-category">Cloud Computing</span>
+                    </div>
+                    <div class="insight-body">
+                        <div class="insight-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 15, 2026</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3>Complete Guide to Cloud Migration for Nepalese Businesses</h3>
+                        <p>Everything you need to know about migrating your infrastructure to the cloud — from assessment to deployment, with cost optimization strategies specific to Nepal.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect fill='%2300c2ff' width='400' height='200'/%3E%3Ctext fill='%23fff' font-family='Inter' font-size='18' x='200' y='100' text-anchor='middle' dominant-baseline='middle'%3ECybersecurity%3C/text%3E%3C/svg%3E" alt="Cybersecurity Best Practices">
+                        <span class="insight-category">Cybersecurity</span>
+                    </div>
+                    <div class="insight-body">
+                        <div class="insight-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 20, 2025</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Cybersecurity Best Practices for Small and Medium Businesses in Nepal</h3>
+                        <p>Practical steps to protect your business from cyber threats. Learn about firewalls, endpoint security, employee training, and incident response planning.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200'%3E%3Crect fill='%2300e5a0' width='400' height='200'/%3E%3Ctext fill='%23fff' font-family='Inter' font-size='18' x='200' y='100' text-anchor='middle' dominant-baseline='middle'%3EERP Solutions%3C/text%3E%3C/svg%3E" alt="ERP Implementation">
+                        <span class="insight-category">ERP</span>
+                    </div>
+                    <div class="insight-body">
+                        <div class="insight-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 10, 2025</span>
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h3>Microsoft Dynamics 365 vs SAP Business One: Which ERP is Right for Your Business?</h3>
+                        <p>A comprehensive comparison of two leading ERP platforms — features, pricing, implementation timelines, and which one fits different business sizes and industries.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="insights-cta">
+                <a href="#" class="btn-primary">View All Insights <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
                 <div class="section-divider"></div>
             </div>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <i class="fas fa-cogs"></i>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What ERP solutions does Connect Company offer?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We are certified partners for Microsoft Dynamics 365 Business Central, SAP Business One, ERPNext, and Odoo ERP. Our team handles complete ERP implementation, customization, migration, training, and ongoing support. We help you choose the right platform based on your business size, industry, budget, and specific requirements.</p>
                     </div>
-                    <h4>Infrastructure</h4>
-                    <p>IT Infrastructure Management, Data Centre Operations, Server Administration, Storage & Backup Solutions</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <i class="fas fa-project-diagram"></i>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide support after project completion?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide comprehensive post-deployment support including 24/7 technical assistance, Annual Maintenance Contracts (AMC), remote monitoring, regular health checks, and performance optimization. Our support team is available via phone, email, and on-site visits to ensure your systems run smoothly at all times.</p>
                     </div>
-                    <h4>Networking</h4>
-                    <p>Network Architecture, LAN/WAN/VPN/MPLS/VLAN, Enterprise Wi-Fi Solutions, Network Security</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <i class="fas fa-user-shield"></i>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does a typical ERP implementation take?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Implementation timelines vary based on complexity. A standard ERP implementation for an SME typically takes 3-6 months, while large enterprise deployments can take 6-18 months. We follow a structured methodology with clear milestones and keep you informed at every stage. We also offer phased rollouts to minimize business disruption.</p>
                     </div>
-                    <h4>Cybersecurity</h4>
-                    <p>Firewall Management, Cybersecurity Strategy, Security Hardening, Risk Management</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <i class="fas fa-chart-bar"></i>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What industries do you specialize in?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve a wide range of industries including Banking & Finance, Healthcare, Manufacturing, Education, Government, Trading & Logistics, Hospitality, Retail, NGOs/INGOs, Construction, Telecommunications, and Corporate Enterprises. Our team has deep domain expertise in each sector, enabling us to deliver industry-specific solutions that address unique challenges and compliance requirements.</p>
                     </div>
-                    <h4>ERP</h4>
-                    <p>Microsoft Dynamics 365 Business Central, SAP Business One, ERP Implementation & Support</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can you help migrate our existing systems to the cloud?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Cloud migration is one of our core competencies. We handle the complete migration process including assessment, planning, migration execution, testing, and post-migration support. We work with Microsoft Azure, AWS, and Google Cloud Platform. Our team ensures zero data loss, minimal downtime, and optimal performance in the new environment.</p>
                     </div>
-                    <h4>Cloud</h4>
-                    <p>Microsoft Azure, Microsoft 365, AWS, Google Workspace, Cloud Migration</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <i class="fas fa-th-large"></i>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What makes Connect Company different from other IT companies in Nepal?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We differentiate ourselves through: (1) Global technology partnerships with Microsoft, SAP, AWS, Cisco, and others, (2) A team of 50+ certified engineers, (3) End-to-end solutions from consulting to support, (4) Deep industry expertise across 12+ sectors, (5) Proven track record with 150+ successful projects, (6) 24/7 support with guaranteed SLAs, and (7) A genuine commitment to long-term client success.</p>
                     </div>
-                    <h4>Virtualization</h4>
-                    <p>VMware, Microsoft Hyper-V, Virtual Servers, Virtual Desktop Infrastructure (VDI)</p>
                 </div>
-                <div class="expertise-card">
-                    <div class="expertise-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h4>IT Services</h4>
-                    <p>Managed IT Services, Annual Maintenance Contracts, Help Desk Support, IT Outsourcing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business with Technology?</h2>
+                <p>Let's discuss how Connect Company can help you achieve your digital transformation goals. Our experts are ready to provide a free consultation.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary btn-large">Schedule Free Consultation <i class="fas fa-arrow-right"></i></a>
+                    <a href="tel:+97714911005" class="btn-secondary btn-large"><i class="fas fa-phone"></i> Call Now: +977-1-4911005</a>
                 </div>
             </div>
         </div>
@@ -595,47 +885,39 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Contact Us</span>
-                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <h2 class="section-title">Let's Start a <span class="gradient-text">Conversation</span></h2>
                 <div class="section-divider"></div>
-                <p class="section-subtitle">Ready to transform your business with technology? Let's talk!</p>
+                <p class="section-subtitle">Reach out to us for a free consultation. Our team will get back to you within 24 hours.</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
+                    <h3>Get in Touch</h3>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="contact-details">
-                            <h5>Address</h5>
+                            <h5>Office Address</h5>
                             <p>Budhanilkantha Municipality, 04 Pasikot<br>Bagmati, Kathmandu, Nepal</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div class="contact-details">
-                            <h5>Email</h5>
-                            <p>info@connectcompany.com.np</p>
+                            <h5>Email Us</h5>
+                            <p>info@connectcompany.com.np<br>sales@connectcompany.com.np</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <div class="contact-details">
-                            <h5>Phone</h5>
-                            <p>+977-1-4911005</p>
+                            <h5>Call Us</h5>
+                            <p>+977-1-4911005<br>+977-9801234567</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
                         <div class="contact-details">
                             <h5>Working Hours</h5>
-                            <p>Sun - Fri: 9:00 AM - 6:00 PM<br>Saturday: Closed</p>
+                            <p>Sunday - Friday: 9:00 AM - 6:00 PM<br>Saturday: Closed (Emergency Support Available)</p>
                         </div>
                     </div>
                     <div class="social-links">
@@ -643,52 +925,91 @@
                         <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
                     <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Ram Sharma" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Business Email *</label>
+                                <input type="email" id="email" name="email" placeholder="e.g. ram@company.com.np" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="e.g. +977-9801234567">
                             </div>
                             <div class="form-group">
-                                <input type="text" id="company" name="company" placeholder="Company Name">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="e.g. ABC Company Pvt. Ltd.">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Service Interested In *</label>
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select a Service</option>
+                                    <option value="erp">ERP Solutions</option>
+                                    <option value="cloud">Cloud Solutions</option>
+                                    <option value="cybersecurity">Cybersecurity Services</option>
+                                    <option value="datacentre">Data Centre Solutions</option>
+                                    <option value="software">Software Development</option>
+                                    <option value="networking">Networking Solutions</option>
+                                    <option value="hardware">Hardware Solutions</option>
+                                    <option value="surveillance">Security & Surveillance</option>
+                                    <option value="communication">Communication Solutions</option>
+                                    <option value="training">Corporate Training</option>
+                                    <option value="consulting">IT Consulting</option>
+                                    <option value="other">Other / Multiple Services</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="" disabled selected>Select Range</option>
+                                    <option value="under5lakhs">Under NPR 5 Lakhs</option>
+                                    <option value="5to15lakhs">NPR 5 - 15 Lakhs</option>
+                                    <option value="15to50lakhs">NPR 15 - 50 Lakhs</option>
+                                    <option value="50lakhsto1cr">NPR 50 Lakhs - 1 Crore</option>
+                                    <option value="above1cr">Above NPR 1 Crore</option>
+                                    <option value="discuss">Prefer to Discuss</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <select id="service" name="service" required>
-                                <option value="" disabled selected>Select Service</option>
-                                <option value="hardware">Hardware Solutions</option>
-                                <option value="software">Software Solutions</option>
-                                <option value="erp">ERP Solutions</option>
-                                <option value="datacentre">Data Centre Solutions</option>
-                                <option value="cloud">Cloud Solutions</option>
-                                <option value="networking">Networking Solutions</option>
-                                <option value="cybersecurity">Cybersecurity Services</option>
-                                <option value="server">Server & Infrastructure</option>
-                                <option value="security">Security & Surveillance</option>
-                                <option value="communication">Communication Solutions</option>
-                                <option value="training">Corporate Training</option>
-                                <option value="consulting">IT Consulting</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <label for="message">Tell Us About Your Requirements *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Describe your project requirements, challenges, timeline, or any specific questions..." required></textarea>
                         </div>
                         <button type="submit" class="btn-primary btn-submit">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
+                        <p class="form-note"><i class="fas fa-lock"></i> Your information is secure. We never share your data with third parties.</p>
                     </form>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-inner">
+                <div class="newsletter-content">
+                    <h3>Stay Updated with IT Insights</h3>
+                    <p>Subscribe to our newsletter for the latest technology trends, security alerts, and IT best practices for your business.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your business email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
             </div>
         </div>
     </section>
@@ -699,20 +1020,17 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
+                        <div class="logo-icon"><i class="fas fa-network-wired"></i></div>
                         <div class="logo-text">
                             <span class="logo-name">Connect Company</span>
                             <span class="logo-tagline">Pvt. Ltd.</span>
                         </div>
                     </div>
-                    <p>Your Trusted Technology Partner in Nepal. Delivering innovative, reliable, and scalable business solutions.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    <p>Your Trusted Technology Partner in Nepal. We deliver end-to-end IT solutions, ERP implementations, cloud services, cybersecurity, and digital transformation for businesses of all sizes.</p>
+                    <div class="footer-certifications">
+                        <span><i class="fas fa-certificate"></i> ISO 9001:2015</span>
+                        <span><i class="fas fa-shield-halved"></i> Microsoft Partner</span>
+                        <span><i class="fas fa-award"></i> SAP Partner</span>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -722,18 +1040,22 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#industries">Industries</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#insights">Insights</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Services</h4>
+                    <h4>Core Services</h4>
                     <ul>
-                        <li><a href="#services">Hardware Solutions</a></li>
-                        <li><a href="#services">Software Solutions</a></li>
                         <li><a href="#services">ERP Solutions</a></li>
                         <li><a href="#services">Cloud Solutions</a></li>
                         <li><a href="#services">Cybersecurity</a></li>
+                        <li><a href="#services">Data Centre</a></li>
+                        <li><a href="#services">Software Development</a></li>
+                        <li><a href="#services">Networking</a></li>
                         <li><a href="#services">IT Consulting</a></li>
+                        <li><a href="#services">Corporate Training</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -751,12 +1073,27 @@
                             <i class="fas fa-phone"></i>
                             <span>+977-1-4911005</span>
                         </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <span>connectcompany.com.np</span>
+                        </li>
                     </ul>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Connect Company Pvt. Ltd. All Rights Reserved.</p>
-                <p class="tagline">"Connecting Technology, Empowering Business."</p>
+                <div class="footer-bottom-left">
+                    <p>&copy; 2026 Connect Company Pvt. Ltd. All Rights Reserved.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p class="tagline">"Connecting Technology, Empowering Business."</p>
+                </div>
             </div>
         </div>
     </footer>
@@ -765,6 +1102,14 @@
     <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </a>
+
+    <!-- Cookie Notice -->
+    <div class="cookie-notice" id="cookieNotice">
+        <div class="cookie-content">
+            <p><i class="fas fa-cookie-bite"></i> We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="#">Privacy Policy</a></p>
+            <button class="cookie-btn" id="cookieAccept">Accept</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
