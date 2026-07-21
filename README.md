@@ -1,6 +1,8 @@
-# Connect Company Pvt. Ltd.
+# CONNECT COMPANY PVT. LTD
 
 **Your Trusted Technology Partner in Nepal**
+
+> *"Connecting Technology, Empowering Business."*
 
 ## About
 
@@ -41,9 +43,5 @@ Microsoft | AWS | Google Cloud | SAP | Cisco | VMware | Fortinet | Oracle
 - **Email:** info@connectcompany.com.np
 - **Phone:** +977-1-4911005
 - **Hours:** Sun-Fri: 9:00 AM - 6:00 PM
-
----
-
-> *"Connecting Technology, Empowering Business."*
 
 © 2026 Connect Company Pvt. Ltd. All Rights Reserved.
