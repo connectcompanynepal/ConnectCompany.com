@@ -9,6 +9,7 @@ window.addEventListener('load', () => {
 const navbar = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
+const navOverlay = document.getElementById('navOverlay');
 const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
@@ -18,12 +19,23 @@ window.addEventListener('scroll', () => {
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+});
+
+navOverlay.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
 });
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
+        navOverlay.classList.remove('active');
+        document.body.style.overflow = '';
     });
 });
 
@@ -148,24 +160,59 @@ window.addEventListener('scroll', () => {
     backToTop.classList.toggle('visible', window.scrollY > 500);
 });
 
-// ===== Contact Form =====
+// ===== Contact Form (EmailJS) =====
+(function() {
+    emailjs.init('YOUR_PUBLIC_KEY');
+})();
+
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const btn = this.querySelector('.btn-submit');
+    const formMessage = document.getElementById('formMessage');
     const original = btn.innerHTML;
+    
     btn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
     btn.disabled = true;
+    formMessage.textContent = '';
+    formMessage.className = 'form-message';
 
-    setTimeout(() => {
-        btn.innerHTML = '<span>Message Sent Successfully!</span><i class="fas fa-check"></i>';
-        btn.style.background = 'linear-gradient(135deg, #00e5a0, #00c2ff)';
-        setTimeout(() => {
-            btn.innerHTML = original;
-            btn.style.background = '';
-            btn.disabled = false;
-            this.reset();
-        }, 2500);
-    }, 1500);
+    const templateParams = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        service: document.getElementById('service').value,
+        budget: document.getElementById('budget').value,
+        message: document.getElementById('message').value,
+        to_email: 'connectcompany1991@gmail.com'
+    };
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function() {
+            btn.innerHTML = '<span>Message Sent Successfully!</span><i class="fas fa-check"></i>';
+            btn.style.background = 'linear-gradient(135deg, #00e5a0, #00c2ff)';
+            formMessage.textContent = 'Thank you! Your message has been sent. We will contact you shortly.';
+            formMessage.className = 'form-message success';
+            setTimeout(() => {
+                btn.innerHTML = original;
+                btn.style.background = '';
+                btn.disabled = false;
+                formMessage.textContent = '';
+                formMessage.className = 'form-message';
+                document.getElementById('contactForm').reset();
+            }, 3000);
+        })
+        .catch(function(error) {
+            btn.innerHTML = '<span>Failed to Send</span><i class="fas fa-times"></i>';
+            btn.style.background = 'linear-gradient(135deg, #e53e3e, #c53030)';
+            formMessage.textContent = 'Sorry, something went wrong. Please try again or email us directly at connectcompany1991@gmail.com';
+            formMessage.className = 'form-message error';
+            setTimeout(() => {
+                btn.innerHTML = original;
+                btn.style.background = '';
+                btn.disabled = false;
+            }, 3000);
+        });
 });
 
 // ===== Newsletter Form =====

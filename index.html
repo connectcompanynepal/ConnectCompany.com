@@ -78,6 +78,7 @@
                 <li><a href="#insights" class="nav-link">Insights</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-overlay" id="navOverlay"></div>
             <div class="nav-actions">
                 <a href="#contact" class="btn-primary nav-btn">Get a Quote</a>
                 <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
@@ -1113,6 +1114,7 @@
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
+                        <div class="form-message" id="formMessage"></div>
                         <p class="form-note"><i class="fas fa-lock"></i> Your information is secure. We never share your data with third parties.</p>
                     </form>
                 </div>
@@ -1241,6 +1243,9 @@
             <button class="cookie-btn" id="cookieAccept">Accept</button>
         </div>
     </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script src="script.js"></script>
 </body>
