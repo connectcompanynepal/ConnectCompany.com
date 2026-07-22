@@ -119,6 +119,69 @@ filterBtns.forEach(btn => {
     });
 });
 
+// ===== Gallery Filter =====
+const galleryFilterBtns = document.querySelectorAll('[data-gfilter]');
+const galleryCards = document.querySelectorAll('.gallery-card');
+
+galleryFilterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        galleryFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-gfilter');
+
+        galleryCards.forEach(card => {
+            const category = card.getAttribute('data-gcategory');
+            if (filter === 'all' || category === filter) {
+                card.style.display = '';
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 50);
+            } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => { card.style.display = 'none'; }, 300);
+            }
+        });
+    });
+});
+
+// ===== Gallery Lightbox =====
+const lightbox = document.getElementById('galleryLightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+document.querySelectorAll('.gallery-zoom').forEach(zoom => {
+    zoom.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const img = zoom.closest('.gallery-card').querySelector('img');
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+lightboxClose.addEventListener('click', () => {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
 // ===== FAQ Accordion =====
 document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -135,7 +198,8 @@ function addAnimationClasses() {
         '.service-card', '.industry-card', '.why-card', '.mvv-card',
         '.process-step', '.insight-card', '.faq-item', '.trend-card',
         '.stat-card', '.partner-logo', '.mini-card', '.highlight',
-        '.about-content', '.about-visual', '.landscape-content', '.landscape-visual'
+        '.about-content', '.about-visual', '.landscape-content', '.landscape-visual',
+        '.gallery-card', '.blog-card'
     ];
     document.querySelectorAll(selectors.join(',')).forEach((el, i) => {
         el.classList.add('fade-in');
@@ -240,13 +304,16 @@ cookieAccept.addEventListener('click', () => {
     cookieNotice.classList.remove('visible');
 });
 
-// ===== Smooth scroll =====
+// ===== Smooth scroll (fast & smooth) =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
         }
     });
 });

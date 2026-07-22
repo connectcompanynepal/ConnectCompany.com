@@ -59,6 +59,7 @@
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li class="has-dropdown">
                     <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
@@ -75,7 +76,7 @@
                 </li>
                 <li><a href="#industries" class="nav-link">Industries</a></li>
                 <li><a href="#process" class="nav-link">Process</a></li>
-                <li><a href="#insights" class="nav-link">Insights</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-overlay" id="navOverlay"></div>
@@ -162,6 +163,107 @@
                     <span class="stat-label">Support Available</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Video Section -->
+    <section id="gallery" class="gallery-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gallery & Videos</span>
+                <h2 class="section-title">Our <span class="gradient-text">Work & Impact</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">See our projects, team, and the impact we've made across Nepal</p>
+            </div>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-gfilter="all">All</button>
+                <button class="filter-btn" data-gfilter="project">Projects</button>
+                <button class="filter-btn" data-gfilter="team">Team</button>
+                <button class="filter-btn" data-gfilter="event">Events</button>
+                <button class="filter-btn" data-gfilter="video">Videos</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card" data-gcategory="project">
+                    <div class="gallery-img">
+                        <img src="images/hero-bg.jpg" alt="Data Centre Setup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom"><i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Data Centre Infrastructure</h4>
+                        <p>Enterprise data centre setup for banking client</p>
+                    </div>
+                </div>
+                <div class="gallery-card" data-gcategory="team">
+                    <div class="gallery-img">
+                        <img src="images/team-working.jpg" alt="Our Team" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom"><i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Our Engineering Team</h4>
+                        <p>50+ certified professionals at work</p>
+                    </div>
+                </div>
+                <div class="gallery-card" data-gcategory="video">
+                    <div class="gallery-img">
+                        <img src="images/hero-bg.jpg" alt="Cloud Migration Video" loading="lazy">
+                        <div class="gallery-overlay">
+                            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" class="gallery-play"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Cloud Migration Case Study</h4>
+                        <p>Watch how we migrated a hospital to Azure</p>
+                    </div>
+                </div>
+                <div class="gallery-card" data-gcategory="project">
+                    <div class="gallery-img">
+                        <img src="images/hero-bg.jpg" alt="Network Installation" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom"><i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Enterprise Network Setup</h4>
+                        <p>Multi-site VPN and MPLS deployment</p>
+                    </div>
+                </div>
+                <div class="gallery-card" data-gcategory="event">
+                    <div class="gallery-img">
+                        <img src="images/hero-bg.jpg" alt="IT Training Session" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom"><i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Corporate Training Program</h4>
+                        <p>Azure certification training for enterprise clients</p>
+                    </div>
+                </div>
+                <div class="gallery-card" data-gcategory="project">
+                    <div class="gallery-img">
+                        <img src="images/hero-bg.jpg" alt="CCTV Installation" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom"><i class="fas fa-expand"></i></span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Security Surveillance System</h4>
+                        <p>500+ IP camera deployment for government project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="gallery-lightbox" id="galleryLightbox">
+            <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+            <img src="" alt="Gallery Image" id="lightboxImg">
         </div>
     </section>
 
@@ -1134,6 +1236,72 @@
                     <input type="email" placeholder="Enter your business email" required>
                     <button type="submit" class="btn-primary">Subscribe</button>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Latest Insights</span>
+                <h2 class="section-title">From Our <span class="gradient-text">Blog</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Stay updated with the latest IT trends, tips, and industry news</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card featured-blog">
+                    <div class="blog-img">
+                        <img src="images/hero-bg.jpg" alt="Cloud Computing Trends" loading="lazy">
+                        <span class="blog-category">Cloud Computing</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 20, 2026</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Top Cloud Migration Strategies for Nepalese Enterprises in 2026</h3>
+                        <p>Discover the best practices for migrating your business infrastructure to the cloud. Learn about hybrid cloud, multi-cloud strategies, and how to minimize downtime during migration.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/hero-bg.jpg" alt="Cybersecurity Tips" loading="lazy">
+                        <span class="blog-category">Cybersecurity</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 12, 2026</span>
+                            <span><i class="fas fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3>10 Essential Cybersecurity Practices Every Business in Nepal Should Follow</h3>
+                        <p>Protect your organization from cyber threats with these practical security measures that are easy to implement.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="images/hero-bg.jpg" alt="ERP Implementation" loading="lazy">
+                        <span class="blog-category">ERP</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 5, 2026</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Microsoft Dynamics 365 vs SAP Business One: Which ERP is Right for You?</h3>
+                        <p>A comprehensive comparison of the two leading ERP platforms to help you make the right choice for your business.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-cta">
+                <a href="#" class="btn-primary">View All Articles <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
