@@ -199,7 +199,7 @@ function addAnimationClasses() {
         '.process-step', '.insight-card', '.faq-item', '.trend-card',
         '.stat-card', '.partner-logo', '.mini-card', '.highlight',
         '.about-content', '.about-visual', '.landscape-content', '.landscape-visual',
-        '.gallery-card', '.blog-card'
+        '.gallery-card', '.blog-card', '.client-item'
     ];
     document.querySelectorAll(selectors.join(',')).forEach((el, i) => {
         el.classList.add('fade-in');
